@@ -1,4 +1,8 @@
 package mines;
 
-public abstract class Mine {//todo
+import resources.ResourceType;
+
+public abstract class Mine {
+  protected ResourceType resourceType;
+  protected int dailyProductionVolume;
 }

@@ -1,4 +1,10 @@
 package mines;
 
-public class UraniumMine extends Mine {//todo
+import resources.ResourceType;
+
+public class UraniumMine extends Mine {
+  public UraniumMine() {
+    this.resourceType = ResourceType.URANIUM;
+    this.dailyProductionVolume = 100;
+  }
 }
