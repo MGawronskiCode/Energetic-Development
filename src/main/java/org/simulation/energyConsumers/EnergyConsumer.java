@@ -1,4 +1,4 @@
-package energyConsumers;
+package org.simulation.energyConsumers;
 
 import lombok.Getter;
 
@@ -6,7 +6,7 @@ public abstract class EnergyConsumer {
   @Getter
   protected int energyConsumptionPerDay;
 
-  public EnergyConsumer(int energyConsumption) {
+  protected EnergyConsumer(int energyConsumption) {
     this.energyConsumptionPerDay = energyConsumption;
   }
 }

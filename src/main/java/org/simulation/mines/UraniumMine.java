@@ -1,6 +1,6 @@
-package mines;
+package org.simulation.mines;
 
-import resources.ResourceType;
+import org.simulation.resources.ResourceType;
 
 public class UraniumMine extends Mine {
   public UraniumMine() {

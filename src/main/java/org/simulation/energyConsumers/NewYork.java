@@ -1,4 +1,4 @@
-package energyConsumers;
+package org.simulation.energyConsumers;
 
 public class NewYork extends EnergyConsumer {
   public NewYork(int energyConsumption) {

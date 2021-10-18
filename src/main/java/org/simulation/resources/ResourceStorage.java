@@ -1,9 +1,12 @@
-package resources;
+package org.simulation.resources;
+
+import lombok.Getter;
 
 import java.util.Map;
 
 public class ResourceStorage {
   private ResourceStorage instance;
+  @Getter
   private Map<ResourceType, Integer> storage;
 
   public ResourceStorage getInstance() {

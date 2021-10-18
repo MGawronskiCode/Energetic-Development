@@ -1,4 +1,4 @@
-package energyConsumers;
+package org.simulation.energyConsumers;
 
 public class Polad extends EnergyConsumer {
   public Polad(int energyConsumption) {
