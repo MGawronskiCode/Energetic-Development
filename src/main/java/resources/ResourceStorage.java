@@ -12,17 +12,26 @@ public class ResourceStorage {
     return instance;
   }
 
-  public void addResource(ResourceType resourceType, int quantity){
-    if (storage.containsKey(resourceType)){
-      increaseResourceByValue(resourceType, quantity);
+  public void addResource(ResourceType resourceType, int quantity) {
+    if (storage.containsKey(resourceType)) {
+      changeResourceQuantityByValue(resourceType, quantity);
     } else
       storage.put(resourceType, quantity);
   }
 
-  private void increaseResourceByValue(ResourceType resourceType, int quantity) {
-    int actualVal = storage.get(resourceType);
-    storage.remove(resourceType);
-    storage.put(resourceType, actualVal+ quantity);
+  public boolean subtractResource(ResourceType resourceType, int quantity) {
+    if (storage.containsKey(resourceType)) {
+      if (storage.get(resourceType) >= quantity) {
+        changeResourceQuantityByValue(resourceType, -quantity);
+        return true;
+      }
+    }
+    return false;
   }
 
+  private void changeResourceQuantityByValue(ResourceType resourceType, int quantity) {
+    int actualVal = storage.get(resourceType);
+    storage.remove(resourceType);
+    storage.put(resourceType, actualVal + quantity);
+  }
 }
