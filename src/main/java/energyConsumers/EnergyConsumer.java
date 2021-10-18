@@ -1,4 +1,4 @@
 package energyConsumers;
 
-public abstract class EnergyConsumer {
+public abstract class EnergyConsumer {//todo
 }

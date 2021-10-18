@@ -1,4 +1,4 @@
 package mines;
 
-public class UraniumMine extends Mine {
+public class UraniumMine extends Mine {//todo
 }

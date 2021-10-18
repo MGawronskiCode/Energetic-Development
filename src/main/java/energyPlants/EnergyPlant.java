@@ -1,4 +1,7 @@
 package energyPlants;
 
-public abstract class EnergyPlant {
+public abstract class EnergyPlant {//todo
+
+  
+
 }

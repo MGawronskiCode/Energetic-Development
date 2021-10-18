@@ -1,4 +1,4 @@
 package energyPlants;
 
-public class CoalPlant extends EnergyPlant {
+public class CoalPlant extends EnergyPlant {//todo
 }

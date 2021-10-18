@@ -1,4 +1,4 @@
 package mines;
 
-public class HadronColider extends Mine {
+public class HadronColider extends Mine {//todo
 }

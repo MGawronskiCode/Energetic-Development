@@ -1,4 +1,4 @@
 package energyConsumers;
 
-public class World extends EnergyConsumer {
+public class World extends EnergyConsumer {//todo
 }

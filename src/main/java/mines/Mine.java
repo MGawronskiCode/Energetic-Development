@@ -1,4 +1,4 @@
 package mines;
 
-public abstract class Mine {
+public abstract class Mine {//todo
 }
